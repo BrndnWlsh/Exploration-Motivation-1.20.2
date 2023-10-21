@@ -1,5 +1,8 @@
 package net.brndnwlsh.explorationmotivation;
 
+import net.brndnwlsh.explorationmotivation.block.ModBlocks;
+import net.brndnwlsh.explorationmotivation.item.ModItemGroups;
+import net.brndnwlsh.explorationmotivation.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,7 +14,9 @@ public class ExplorationMotivation implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
