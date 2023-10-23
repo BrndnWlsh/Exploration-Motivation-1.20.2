@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "explorationmotivation:block/ruby_block"
-  }
-}

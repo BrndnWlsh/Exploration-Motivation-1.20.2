@@ -18,6 +18,7 @@ public class ModItemGroups {
                         entries.add(ModItems.SAPPHIRE);
                         entries.add(ModBlocks.SAPPHIRE_BLOCK);
                         entries.add(ModItems.TOTEM_OF_LIFE);
+                        entries.add(ModItems.ELVEN_SABRE);
 
                     }).build());
     public static final ItemGroup RUBY = Registry.register(Registries.ITEM_GROUP,
