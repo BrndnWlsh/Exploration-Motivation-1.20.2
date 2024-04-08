@@ -4,7 +4,7 @@ import net.minecraft.client.render.entity.animation.Animation;
 import net.minecraft.client.render.entity.animation.AnimationHelper;
 import net.minecraft.client.render.entity.animation.Keyframe;
 import net.minecraft.client.render.entity.animation.Transformation;
-
+//TODO ELF_WALK floats, and ELF_IDLE floats a little
 public class ModAnimations {
 
     public static final Animation ELF_IDLE = Animation.Builder.create(2f).looping()
