@@ -85,6 +85,7 @@ public class DwarfModel<T extends DwarfEntity> extends SinglePartEntityModel<T> 
 
 		this.animateMovement(ModAnimations.DWARF_WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
 		this.updateAnimation(entity.idleAnimationState, ModAnimations.DWARF_IDLE, ageInTicks, 1f);
+		this.updateAnimation(entity.attackAnimationState, ModAnimations.DWARF_ATTACK, ageInTicks, 1f);
 	}
 
 	private void setHeadAngles(float headYaw, float headPitch) {
