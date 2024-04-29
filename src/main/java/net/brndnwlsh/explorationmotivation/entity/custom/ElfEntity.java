@@ -4,15 +4,13 @@ import net.brndnwlsh.explorationmotivation.entity.ModEntities;
 import net.minecraft.entity.AnimationState;
 import net.minecraft.entity.EntityPose;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.ai.goal.LookAroundGoal;
-import net.minecraft.entity.ai.goal.LookAtEntityGoal;
-import net.minecraft.entity.ai.goal.SwimGoal;
-import net.minecraft.entity.ai.goal.WanderAroundFarGoal;
+import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.PassiveEntity;
+import net.minecraft.entity.passive.WolfEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
@@ -55,9 +53,11 @@ public class ElfEntity extends PassiveEntity {
     @Override
     protected void initGoals() {
         this.goalSelector.add(0, new SwimGoal(this));
-        this.goalSelector.add(1, new WanderAroundFarGoal (this, 1D));
-        this.goalSelector.add(2, new LookAtEntityGoal(this, PlayerEntity.class, 4f));
-        this.goalSelector.add(3, new LookAroundGoal(this));
+        this.goalSelector.add(1, new EscapeDangerGoal(this, 2.0));
+        this.goalSelector.add(2, new FleeEntityGoal<>(this, DwarfEntity.class, 6.0f, 1.0, 1.6));
+        this.goalSelector.add(3, new WanderAroundFarGoal (this, 1D));
+        this.goalSelector.add(4, new LookAtEntityGoal(this, PlayerEntity.class, 4f));
+        this.goalSelector.add(5, new LookAroundGoal(this));
     }
 
     public static DefaultAttributeContainer.Builder createElfAttributes() {
