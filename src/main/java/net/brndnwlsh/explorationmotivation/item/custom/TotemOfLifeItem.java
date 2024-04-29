@@ -28,6 +28,7 @@ public class TotemOfLifeItem extends Item {
         if (!world.isClient) {
                 user.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 400));
         }
+        //TODO add totem visual effect to TotemOfLife
  //       if (world.isClient) {
  //           new TotemParticle.Factory();
  //           particleManager.addEmitter(entity, ParticleTypes.TOTEM_OF_UNDYING, 30);}

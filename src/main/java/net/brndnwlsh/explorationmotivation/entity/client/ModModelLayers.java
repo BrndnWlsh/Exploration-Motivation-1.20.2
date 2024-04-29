@@ -7,4 +7,6 @@ import net.minecraft.util.Identifier;
 public class ModModelLayers {
     public static final EntityModelLayer ELF =
             new EntityModelLayer(new Identifier(ExplorationMotivation.MOD_ID, "elf"), "main");
+    public static final EntityModelLayer DWARF =
+            new EntityModelLayer(new Identifier(ExplorationMotivation.MOD_ID, "dwarf"), "main");
 }

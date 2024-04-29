@@ -4,10 +4,12 @@
   "item.explorationmotivation.totem_of_life": "Totem of Life",
   "item.explorationmotivation.elven_sabre": "Elven Sabre",
   "item.explorationmotivation.elf_spawn_egg": "Elf Spawn Egg",
+  "item.explorationmotivation.dwarf_spawn_egg": "Dwarf Spawn Egg",
 
   "block.explorationmotivation.ruby_block": "Block of Ruby",
   "block.explorationmotivation.sapphire_block": "Block of Sapphire",
 
   "itemgroup.elven": "Elven",
-  "itemgroup.ruby": "Ruby"
+  "itemgroup.ruby": "Ruby",
+  "itemgroup.dwarven": "Dwarven"
 }

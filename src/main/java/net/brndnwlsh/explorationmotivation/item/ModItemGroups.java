@@ -30,6 +30,13 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RUBY_BLOCK);
 
                     }).build());
+    public static final ItemGroup DWARVEN = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(ExplorationMotivation.MOD_ID, "dwarven"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.dwarven"))
+                    .icon(() -> new ItemStack(ModItems.DWARF_SPAWN_EGG)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.DWARF_SPAWN_EGG);
+
+                    }).build());
 
     public static void registerItemGroups() {
 ExplorationMotivation.LOGGER.info("Registering Item Groups for " + ExplorationMotivation.MOD_ID);

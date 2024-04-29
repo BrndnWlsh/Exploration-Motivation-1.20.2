@@ -2,6 +2,7 @@ package net.brndnwlsh.explorationmotivation;
 
 import net.brndnwlsh.explorationmotivation.block.ModBlocks;
 import net.brndnwlsh.explorationmotivation.entity.ModEntities;
+import net.brndnwlsh.explorationmotivation.entity.custom.DwarfEntity;
 import net.brndnwlsh.explorationmotivation.entity.custom.ElfEntity;
 import net.brndnwlsh.explorationmotivation.entity.custom.ElfInteractionHandler;
 import net.brndnwlsh.explorationmotivation.item.ModItemGroups;
@@ -31,6 +32,7 @@ public class ExplorationMotivation implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		FabricDefaultAttributeRegistry.register(ModEntities.ELF, ElfEntity.createElfAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.DWARF, DwarfEntity.createDwarfAttributes());
 
 		ElfInteractionHandler handler = new ElfInteractionHandler();
 		handler.register();
