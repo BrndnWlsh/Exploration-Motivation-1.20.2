@@ -1,6 +1,7 @@
 package net.brndnwlsh.explorationmotivation.entity;
 
 import net.brndnwlsh.explorationmotivation.ExplorationMotivation;
+import net.brndnwlsh.explorationmotivation.entity.custom.AnuEntity;
 import net.brndnwlsh.explorationmotivation.entity.custom.DwarfEntity;
 import net.brndnwlsh.explorationmotivation.entity.custom.ElfEntity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
@@ -16,6 +17,10 @@ public class ModEntities {
             new Identifier(ExplorationMotivation.MOD_ID, "elf"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, ElfEntity::new)
                     .dimensions(EntityDimensions.fixed(.55f, 1.95f)).build());
+    public static final EntityType<AnuEntity> ANU = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(ExplorationMotivation.MOD_ID, "anu"),
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, AnuEntity::new)
+                    .dimensions(EntityDimensions.fixed(.55f, 2.25f)).build());
     public static final EntityType<DwarfEntity> DWARF = Registry.register(Registries.ENTITY_TYPE,
             new Identifier(ExplorationMotivation.MOD_ID, "dwarf"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, DwarfEntity::new)

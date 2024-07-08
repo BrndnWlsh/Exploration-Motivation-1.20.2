@@ -13,5 +13,7 @@ public class ExplorationMotivationClient implements ClientModInitializer {
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.ELF, ElfModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.DWARF, DwarfRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.DWARF, DwarfModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.ANU, AnuRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.ANU, AnuModel::getTexturedModelData);
     }
 }

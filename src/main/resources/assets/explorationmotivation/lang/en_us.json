@@ -1,13 +1,20 @@
 {
   "item.explorationmotivation.ruby": "Ruby",
   "item.explorationmotivation.sapphire": "Sapphire",
+  "item.explorationmotivation.steel": "Steel",
   "item.explorationmotivation.totem_of_life": "Totem of Life",
   "item.explorationmotivation.elven_sabre": "Elven Sabre",
   "item.explorationmotivation.elf_spawn_egg": "Elf Spawn Egg",
   "item.explorationmotivation.dwarf_spawn_egg": "Dwarf Spawn Egg",
+  "item.explorationmotivation.anu_spawn_egg": "Anu Spawn Egg",
 
   "block.explorationmotivation.ruby_block": "Block of Ruby",
   "block.explorationmotivation.sapphire_block": "Block of Sapphire",
+  "block.explorationmotivation.steel_block": "Block of Steel",
+
+  "entity.explorationmotivation.elf": "Elf",
+  "entity.explorationmotivation.anu": "Anu, Empress of the Eternal Grove",
+  "entity.explorationmotivation.dwarf": "Dwarf",
 
   "itemgroup.elven": "Elven",
   "itemgroup.ruby": "Ruby",

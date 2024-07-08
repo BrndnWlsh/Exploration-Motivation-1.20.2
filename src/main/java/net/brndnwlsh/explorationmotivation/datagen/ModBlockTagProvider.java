@@ -18,11 +18,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.RUBY_BLOCK)
-                .add(ModBlocks.SAPPHIRE_BLOCK);
+                .add(ModBlocks.SAPPHIRE_BLOCK)
+                .add(ModBlocks.STEEL_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.RUBY_BLOCK)
-                .add(ModBlocks.SAPPHIRE_BLOCK);
+                .add(ModBlocks.SAPPHIRE_BLOCK)
+                .add(ModBlocks.STEEL_BLOCK);
 
 
     }

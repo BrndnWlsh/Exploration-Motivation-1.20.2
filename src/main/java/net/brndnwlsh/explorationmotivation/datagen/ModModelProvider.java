@@ -21,12 +21,14 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
     blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_BLOCK);
     blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAPPHIRE_BLOCK);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STEEL_BLOCK);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
     itemModelGenerator.register(ModItems.RUBY, Models.GENERATED);
     itemModelGenerator.register(ModItems.SAPPHIRE, Models.GENERATED);
+    itemModelGenerator.register(ModItems.STEEL, Models.GENERATED);
 
     itemModelGenerator.register(ModItems.TOTEM_OF_LIFE, Models.GENERATED);
     itemModelGenerator.register(ModItems.ELVEN_SABRE, Models.HANDHELD);
@@ -34,6 +36,8 @@ public class ModModelProvider extends FabricModelProvider {
     itemModelGenerator.register(ModItems.ELF_SPAWN_EGG,
             new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
     itemModelGenerator.register(ModItems.DWARF_SPAWN_EGG,
+            new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
+    itemModelGenerator.register(ModItems.ANU_SPAWN_EGG,
             new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
     }
 }

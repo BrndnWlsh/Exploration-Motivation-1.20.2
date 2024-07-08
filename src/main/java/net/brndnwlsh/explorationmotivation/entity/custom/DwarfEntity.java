@@ -122,7 +122,8 @@ public class DwarfEntity extends PathAwareEntity implements Angerable {
         this.goalSelector.add(4, new LookAroundGoal(this));
 
         this.targetSelector.add(1, new RevengeGoal(this));
-        this.targetSelector.add(2, new ActiveTargetGoal<>(this, ElfEntity.class, false));
+        this.targetSelector.add(2, new ActiveTargetGoal<>(this, ElfEntity.class, true));
+        this.targetSelector.add(2, new ActiveTargetGoal<>(this, AnuEntity.class, true));
     }
 
     public static DefaultAttributeContainer.Builder createDwarfAttributes() {

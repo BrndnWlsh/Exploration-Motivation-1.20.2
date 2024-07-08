@@ -17,6 +17,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).mapColor(MapColor.BRIGHT_RED)));
     public static final Block SAPPHIRE_BLOCK = registerBlock("sapphire_block",
             new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).mapColor(MapColor.LIGHT_BLUE)));
+    public static final Block STEEL_BLOCK = registerBlock("steel_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).mapColor(MapColor.DARK_AQUA)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

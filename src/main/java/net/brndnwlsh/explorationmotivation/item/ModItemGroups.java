@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TOTEM_OF_LIFE);
                         entries.add(ModItems.ELVEN_SABRE);
                         entries.add(ModItems.ELF_SPAWN_EGG);
+                        entries.add(ModItems.ANU_SPAWN_EGG);
 
                     }).build());
     public static final ItemGroup RUBY = Registry.register(Registries.ITEM_GROUP,
@@ -33,8 +34,10 @@ public class ModItemGroups {
     public static final ItemGroup DWARVEN = Registry.register(Registries.ITEM_GROUP,
             new Identifier(ExplorationMotivation.MOD_ID, "dwarven"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.dwarven"))
-                    .icon(() -> new ItemStack(ModItems.DWARF_SPAWN_EGG)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.STEEL)).entries((displayContext, entries) -> {
                         entries.add(ModItems.DWARF_SPAWN_EGG);
+                        entries.add(ModItems.STEEL);
+                        entries.add(ModBlocks.STEEL_BLOCK);
 
                     }).build());
 

@@ -15,11 +15,14 @@ import net.minecraft.util.Rarity;
 public class ModItems {
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
     public static final Item SAPPHIRE = registerItem("sapphire", new Item(new FabricItemSettings()));
+    public static final Item STEEL = registerItem("steel", new Item(new FabricItemSettings()));
 
     public static final Item ELF_SPAWN_EGG = registerItem("elf_spawn_egg",
             new SpawnEggItem(ModEntities.ELF, 0x93e34b, 0x234504, new FabricItemSettings()));
     public static final Item DWARF_SPAWN_EGG = registerItem("dwarf_spawn_egg",
             new SpawnEggItem(ModEntities.DWARF, 0x3c377c, 0xff5520, new FabricItemSettings()));
+    public static final Item ANU_SPAWN_EGG = registerItem("anu_spawn_egg",
+            new SpawnEggItem(ModEntities.ANU, 0x5AC6D1, 0x4B4B4B, new FabricItemSettings()));
 
     public static final Item TOTEM_OF_LIFE = registerItem("totem_of_life",
             new TotemOfLifeItem(new FabricItemSettings().maxDamage(64).rarity(Rarity.UNCOMMON)));
